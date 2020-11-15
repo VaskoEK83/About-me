@@ -1,0 +1,109 @@
+/*  
+.profile-card {
+  background-color: blue;
+}
+
+.head, .content {
+  background-color: lightGreen;
+}
+
+.profile-image, .name-headline, .about, .links {
+  background-color: violet;
+} 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* elemek mag.+szél.-be mostantól a padding és border is beletart. */
+  font-size: 100%; /* betűméretek egységesítése */
+}
+
+.profile-card {
+  width: 460px;
+  max-width: calc(100vw - 10px);
+}
+
+body {
+  display: flex; /* body elem egy flexbox konténer */
+  justify-content: center;
+  align-items: center; /* tartalom középre ig. függ+vízsz */
+  height: 100vh;
+}
+
+.head, .content {
+  width: 95%; /* profile-card szél.-hez képest */
+  margin: 0 auto; /* függ.-en középre kerül */
+}
+
+ul {
+  list-style: none; /* listapontok eltünt. */
+}
+
+li {
+  display: inline; /* listaelemek egymás mellé */
+}
+
+body {
+  background: url('asset/ginger.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Calibri;
+  color: azure;
+  text-align: center;
+}
+
+.profile-card {
+  background-color: hsla(280, 5%, 50%, .8);
+  border-radius: 10px;
+  box-shadow: 15px 15px 10px hsla(0, 0%, 2%, .2);
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 1.2px; /* betűket picit távolítjuk */
+}
+
+h2 {
+  font-size: 20px;
+}
+
+span {
+  font-size: 12px;
+}
+
+/* head és content közé határvonal megadása */
+.content {
+  border-top: 2px solid hsla(0, 0%, 100%, .2); /* vízsz. választóvonal */
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+a {
+  color: blueviolet;
+  filter: grayscale(40%); /* 100%-nál teljesen beszürkül */
+}
+
+img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.profile-image {
+  margin-top: -60px; /* profilkép kitolása a keretből */
+}
+
+img {
+  padding: 1px;
+  background-color: bisque; /* vékony világos keret a kép köré */
+  filter: grayscale(35%);
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(0%);
+}
