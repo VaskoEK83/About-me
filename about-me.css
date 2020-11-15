@@ -98,7 +98,7 @@ img {
 
 img {
   padding: 1px;
-  background-color: bisque; /* vékony világos keret a kép köré */
+  background-color: wheat; /* vékony világos keret a kép köré */
   filter: grayscale(35%);
 }
 
