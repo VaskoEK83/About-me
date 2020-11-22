@@ -22,6 +22,7 @@
 .profile-card {
   width: 460px;
   max-width: calc(100vw - 10px);
+  position: relative;
 }
 
 body {
@@ -36,12 +37,8 @@ body {
   margin: 0 auto; /* függ.-en középre kerül */
 }
 
-ul {
-  list-style: none; /* listapontok eltünt. */
-}
-
-li {
-  display: inline; /* listaelemek egymás mellé */
+.links {
+  margin-top: 20px;
 }
 
 body {
@@ -78,22 +75,23 @@ span {
   padding-top: 20px;
 }
 
-.links {
-  margin-top: 20px;
-}
-
 a {
   color: blueviolet;
   filter: grayscale(40%); /* 100%-nál teljesen beszürkül */
 }
 
-img {
-  width: 120px;
+#profile-pic {
   border-radius: 50%;
 }
 
 .profile-image {
   margin-top: -60px; /* profilkép kitolása a keretből */
+}
+
+/* vízszintes tagolás */
+/* kiválaszt minden gyereket, amely egy másik gyereket követ */
+#actual-links * + * {
+  margin-left: 5%;
 }
 
 img {
@@ -106,4 +104,16 @@ img:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   filter: grayscale(0%);
+}
+
+.star {
+  z-index: 1000;
+  position: absolute;
+  left: calc(100% - 22px);
+  top: -20px;
+}
+
+.fa-star {
+  color: yellow;
+  filter: grayscale(30%);
 }
