@@ -20,8 +20,8 @@
 }
 
 .profile-card {
-  width: 460px;
-  max-width: calc(100vw - 10px);
+  /* width: 460px;
+  max-width: calc(100vw - 10px); */
   position: relative;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .links {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 body {
@@ -56,23 +56,23 @@ body {
 }
 
 h1 {
-  font-size: 24px;
-  letter-spacing: 1.2px; /* betűket picit távolítjuk */
+  font-size: 1.5rem;
+  letter-spacing: 0.075rem; /* betűket picit távolítjuk */
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 span {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /* head és content közé határvonal megadása */
 .content {
   border-top: 2px solid hsla(0, 0%, 100%, .2); /* vízsz. választóvonal */
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
 }
 
 a {
@@ -85,7 +85,7 @@ a {
 }
 
 .profile-image {
-  margin-top: -60px; /* profilkép kitolása a keretből */
+  margin-top: -3.75rem; /* profilkép kitolása a keretből */
 }
 
 /* vízszintes tagolás */
@@ -95,7 +95,7 @@ a {
 }
 
 img {
-  padding: 1px;
+  padding: 0.0625rem;
   background-color: wheat; /* vékony világos keret a kép köré */
   filter: grayscale(35%);
 }
@@ -116,4 +116,32 @@ img:hover {
 .fa-star {
   color: yellow;
   filter: grayscale(30%);
+}
+
+/* if (min_width > 320) */
+@media (min-width: 320px) {
+  .profile-card {
+    max-width: 80%;
+  }
+}
+
+/* if (min_width > 480) */
+@media (min-width: 480px) {
+  .profile-card {
+    max-width: 80%;
+  }
+}
+
+/* if (min_width > 600) */
+@media (min-width: 600px) {
+  .profile-card {
+    max-width: 460px;
+  }
+}
+
+/* if (min_width > 992) */
+@media (min-width: 992px) {
+  .profile-card {
+    max-width: 460px;
+  }
 }
